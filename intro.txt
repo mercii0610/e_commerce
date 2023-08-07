@@ -1,0 +1,49 @@
+Module
+Registration
+------------
+HTML,CSS
+-----------
+    get username
+    get password
+    retype password
+JS
+-----
+    check both passwords are same
+    if true then POST to PHP Server
+
+PHP
+------
+    Receive the username,password,retypr_password
+    validating the password here again
+    Make SQL connection
+        //Check is if the username is already available or not - TASK
+        //if already available show error, stop execution
+        //else proceed
+    insert the recieved data to the users table
+SQL 
+----
+    create a users table   
+        username
+        password
+        created_date
+    
+
+Module
+--------
+
+Login -- TASK
+--------
+
+HTML,CSS
+---------
+    get username
+    get password
+
+    post it to Server
+
+PHP Server  
+----------
+    recieve username and password
+    check if both exists in users table
+    if exists, show login success
+    else show Login failed
